@@ -8,6 +8,8 @@
 
 body { /** Ajout d'une margin car il y a un margin de 8px de base**/
    margin: 0px;
+   font-family: "Roboto";
+
 }
 
 h1 { /** Titre ohmyfood **/
@@ -16,4 +18,15 @@ h1 { /** Titre ohmyfood **/
     text-align: center;
     padding: 0.3rem;
 
+}
+
+main .city { /** Paramètre de la div PARIS-BELLEVILLE**/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #EAEAEA;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 80%;
 }
