@@ -1,6 +1,19 @@
-.logo {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap'); /* Import du font Shrikhand */
+
+*, 
+::before
+::after {
+    box-sizing: border-box;
+}
+
+body { /** Ajout d'une margin car il y a un margin de 8px de base**/
+   margin: 0px;
+}
+
+h1 { /** Titre ohmyfood **/
+
+    font-family: "Shrikhand", serif;
     text-align: center;
-    font-family: "Shrikhand", cursive;
+    padding: 0.3rem;
 
 }
