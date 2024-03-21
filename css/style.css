@@ -59,4 +59,17 @@ background-color: #F6F6F6;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
     background-image: linear-gradient(to top, #9356DC,#FF79DA);
     margin-bottom: 2%;
+    transition-duration: .50s;
+    cursor: pointer;
+}
+
+.reserver button:hover {
+    background-color: #fff;
+    box-shadow: 0.25rem 0.25rem 12px rgba(0,0,0,.5);
+}
+
+
+.fonctionnement h2 {
+    font-size: 24px;
+    font-weight: 700;
 }
