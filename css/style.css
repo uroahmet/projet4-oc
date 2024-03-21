@@ -62,13 +62,22 @@ h1 { /** Titre ohmyfood **/
 }
 .fonctionnement ol {
   display: flex;
-  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .fonctionnement ol {
+    flex-direction: column;
+  }
 }
 .fonctionnement li {
   background-color: #F6F6F6;
-  padding: 1rem 2rem;
-  border: 1px solid red;
-  flex-grow: 1;
+  padding: 1.5rem 2rem;
+  flex-grow: 1; /* Permet de prendre autant d'espace que possible dans le conteneur flex */
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.fonctionnement i {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
