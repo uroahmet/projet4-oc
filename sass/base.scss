@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap'); /* Import du font Shrikhand */
+
+*, 
+::before
+::after {
+    box-sizing: border-box;
+}
+
+body { /** Ajout d'une margin car il y a un margin de 8px de base**/
+   margin: 0px;
+   font-family: "Roboto";
+
+}
+

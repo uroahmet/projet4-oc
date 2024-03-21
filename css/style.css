@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"); /* Import du font Shrikhand */
 *,
 ::before ::after {
@@ -16,7 +15,7 @@ h1 { /** Titre ohmyfood **/
   padding: 0.3rem;
 }
 
-main .city { /** Paramètre de la div PARIS-BELLEVILLE**/
+.city {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,18 +30,15 @@ main .city { /** Paramètre de la div PARIS-BELLEVILLE**/
   text-align: center;
   background-color: #F6F6F6;
 }
-
 .reserver h2 {
   font-size: 40px;
   margin: 0;
   padding: 20px;
 }
-
 .reserver p {
   font-size: 18px;
   margin-bottom: 2%;
 }
-
 .reserver button { /* Configuration du bouton */
   color: white;
   font-weight: 500;
@@ -56,15 +52,23 @@ main .city { /** Paramètre de la div PARIS-BELLEVILLE**/
   transition-duration: 0.5s;
   cursor: pointer;
 }
-
 .reserver button:hover {
   background-color: #fff;
   box-shadow: 0.25rem 0.25rem 12px rgba(0, 0, 0, 0.5);
 }
 
-.fonctionnement h2 {
-  font-size: 24px;
-  font-weight: 700;
+.fonctionnement {
+  padding: 0 1rem;
+}
+.fonctionnement ol {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fonctionnement li {
+  background-color: #F6F6F6;
+  padding: 1rem 2rem;
+  border: 1px solid red;
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
