@@ -75,9 +75,35 @@ h1 { /** Titre ohmyfood **/
   flex-grow: 1; /* Permet de prendre autant d'espace que possible dans le conteneur flex */
   border-radius: 1rem;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  list-style-type: none;
 }
 .fonctionnement i {
   margin-right: 1rem;
+}
+.fonctionnement h2 {
+  padding: 30px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  left: -19px;
+  bottom: -5px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #9356DC;
+  left: 28px;
+}
+@media (max-width: 768px) {
+  .number {
+    left: -11px;
+    bottom: -77px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    left: -19px;
+    bottom: -5px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #9356DC;
+    left: 28px;
+    @media (max-width: 768px) {
+        left: -11px;
+        bottom: -77px;
+
+    }
+}
