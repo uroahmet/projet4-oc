@@ -39,6 +39,11 @@ h1 { /** Titre ohmyfood **/
   font-size: 18px;
   margin-bottom: 2%;
 }
+@media (max-width: 768px) {
+  .reserver p {
+    margin-bottom: 6%;
+  }
+}
 .reserver button { /* Configuration du bouton */
   color: white;
   font-weight: 500;
@@ -51,6 +56,7 @@ h1 { /** Titre ohmyfood **/
   margin-bottom: 2%;
   transition-duration: 0.5s;
   cursor: pointer;
+  margin-bottom: 50px;
 }
 .reserver button:hover {
   background-color: #fff;
@@ -58,15 +64,21 @@ h1 { /** Titre ohmyfood **/
 }
 
 .fonctionnement {
-  padding: 0 1rem;
+  padding: 0 17rem;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .fonctionnement {
+    padding: 0 1rem;
+  }
 }
 .fonctionnement ol {
   display: flex;
   gap: 1rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 320px) {
   .fonctionnement ol {
     flex-direction: column;
+    padding: 0 13rem;
   }
 }
 .fonctionnement li {
@@ -77,11 +89,21 @@ h1 { /** Titre ohmyfood **/
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   list-style-type: none;
 }
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .fonctionnement li {
+    margin-bottom: -60px;
+  }
+}
 .fonctionnement i {
   margin-right: 1rem;
 }
 .fonctionnement h2 {
   padding: 30px;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .fonctionnement h2 {
+    margin-bottom: -82px;
+  }
 }
 
 .number {

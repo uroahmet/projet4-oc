@@ -1,10 +1,14 @@
 .fonctionnement {
-padding: 0 1rem;
+padding: 0 17rem;
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    padding: 0 1rem;
+}
 & ol {
 display: flex;
 gap: 1rem;
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 320px) {
     flex-direction: column;
+    padding: 0 13rem;
     }
 }
 & li {
@@ -14,11 +18,18 @@ gap: 1rem;
     border-radius: 1rem;
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     list-style-type: none;
+    @media screen and (max-width: 768px) and (min-width: 320px) {
+        margin-bottom: -60px;
+    }
     }
 & i {
     margin-right: 1rem;
 }
 & h2 {
     padding: 30px;
+    
+    @media screen and (max-width: 768px) and (min-width: 320px) {
+    margin-bottom: -82px;
+    }
 }
 }
