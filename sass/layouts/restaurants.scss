@@ -16,11 +16,16 @@ margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    min-width: 30rem;
+    justify-content: center;
 }
 
 .card {
-    border: 1px solid black;
-    height: 4rem;
-    flex-grow: 1;
+    width: calc(50% - 1rem);
+    & .card__image {
+        background-image: url(../../img/restau/menu1.jpg);
+        height: 231px;
+        width: 498.65px;
+        border: 1px solid black;
+        border-radius: 1rem 1rem 0 0;
+    }
 }

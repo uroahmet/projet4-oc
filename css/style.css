@@ -159,13 +159,18 @@ h1 { /** Titre ohmyfood **/
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  min-width: 30rem;
+  justify-content: center;
 }
 
 .card {
+  width: calc(50% - 1rem); /* Largeur de 50% moins la marge pour que deux cartes s'alignent sur une ligne */
+}
+.card .card__image {
+  background-image: url(../../img/restau/menu1.jpg);
+  height: 231px;
+  width: 498.65px;
   border: 1px solid black;
-  height: 4rem;
-  flex-grow: 1;
+  border-radius: 1rem 1rem 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
