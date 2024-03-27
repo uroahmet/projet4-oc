@@ -179,7 +179,7 @@ h1 { /** Titre ohmyfood **/
   position: absolute;
   height: 29px;
   width: 5rem;
-  right: 10rem;
+  right: 18rem;
   margin-top: 20px;
   color: #008766;
   background-color: #99E2D0;
@@ -193,7 +193,7 @@ h1 { /** Titre ohmyfood **/
   width: calc(50% - 1rem);
 }
 .card__image {
-  height: 231px;
+  height: 172px;
   width: 498.65px;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
@@ -223,13 +223,19 @@ h1 { /** Titre ohmyfood **/
 }
 .card__description p {
   margin: 0.5rem;
+  padding: 10px;
 }
 .card__description i {
-  font-size: 2rem;
   position: absolute;
   right: 1rem;
-  top: 0;
-  margin-top: 5px;
+  margin-top: -4rem;
+  width: 28px;
+  font-size: 25px;
+  padding: 0;
+  border: transparent 0px solid;
+  -webkit-text-stroke: 1px white;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
