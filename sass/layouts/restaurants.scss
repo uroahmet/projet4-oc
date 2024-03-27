@@ -6,7 +6,7 @@
 & h2 {
     padding: 30px;
 margin-left: 310px;
-margin-bottom: 2rem;
+margin-bottom: 0rem;
 @media screen and (max-width: 932px) and (min-width: 430px) {
     margin-left: -10px;
 }
@@ -19,7 +19,21 @@ margin-bottom: 2rem;
     margin-left: 335px;
 
     & .new {
-        border: 1px solid grey;
+        position: relative;
+    }
+    & .new::before {
+        content: "Nouveau";
+        position: absolute;
+        height: 29px;
+        width: 5rem;
+        right: 10rem;
+        margin-top: 20px;
+        color: #008766;
+        background-color: #99E2D0;
+        box-shadow: 0px 2px 4px 0px #00000026;
+        display: grid;
+        place-items: center;
+        border-radius: 2px;
     }
 }
 
@@ -28,12 +42,37 @@ margin-bottom: 2rem;
     &__image {
         height: 231px;
         width: 498.65px;
-        border: 1px solid black;
         border-radius: 1rem 1rem 0 0;
+        background-size: cover;
     }
     @for $i from 1 through 4 {
-        &   __image-#{$i} {
+        &__image-#{$i} {
             background-image: url(../../img/restau/menu#{$i}.jpg);
+        }
+    }
+    &__description {
+        position: relative;
+        border-radius: 0 0 1rem 1rem;
+        background-color: #fff;
+        margin-top: -9px;
+        box-shadow: 0px 4px 15px 0px #0000001A;
+        width: 499px;
+        h3 {
+
+            margin: 0.5rem;
+
+        }
+        p {
+            margin: 0.5rem;
+            padding: 10px;
+        }
+        i {
+            font-size: 2rem;
+            position: absolute;
+            right: 1rem;
+            top: 0;
+            margin-top: 5px;
+
         }
     }
 }

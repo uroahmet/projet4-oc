@@ -12,3 +12,11 @@ body { /** Ajout d'une margin car il y a un margin de 8px de base**/
 
 }
 
+h3,
+p {
+    margin: 0;
+}
+a {
+   text-decoration: none;
+    color: inherit;
+}

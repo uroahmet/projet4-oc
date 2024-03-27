@@ -9,6 +9,16 @@ body { /** Ajout d'une margin car il y a un margin de 8px de base**/
   font-family: "Roboto";
 }
 
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 h1 { /** Titre ohmyfood **/
   font-family: "Shrikhand", serif;
   text-align: center;
@@ -147,7 +157,7 @@ h1 { /** Titre ohmyfood **/
 .menus h2 {
   padding: 30px;
   margin-left: 310px;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 @media screen and (max-width: 932px) and (min-width: 430px) {
   .menus h2 {
@@ -162,7 +172,21 @@ h1 { /** Titre ohmyfood **/
   margin-left: 335px;
 }
 .menus__cards .new {
-  border: 1px solid grey;
+  position: relative;
+}
+.menus__cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 29px;
+  width: 5rem;
+  right: 10rem;
+  margin-top: 20px;
+  color: #008766;
+  background-color: #99E2D0;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  display: grid;
+  place-items: center;
+  border-radius: 2px;
 }
 
 .card {
@@ -171,20 +195,41 @@ h1 { /** Titre ohmyfood **/
 .card__image {
   height: 231px;
   width: 498.65px;
-  border: 1px solid black;
   border-radius: 1rem 1rem 0 0;
+  background-size: cover;
 }
-.card __image-1 {
+.card__image-1 {
   background-image: url(../../img/restau/menu1.jpg);
 }
-.card __image-2 {
+.card__image-2 {
   background-image: url(../../img/restau/menu2.jpg);
 }
-.card __image-3 {
+.card__image-3 {
   background-image: url(../../img/restau/menu3.jpg);
 }
-.card __image-4 {
+.card__image-4 {
   background-image: url(../../img/restau/menu4.jpg);
+}
+.card__description {
+  position: relative;
+  border-radius: 0 0 1rem 1rem;
+  background-color: #fff;
+  margin-top: -9px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  width: 499px;
+}
+.card__description h3 {
+  margin: 0.5rem;
+}
+.card__description p {
+  margin: 0.5rem;
+}
+.card__description i {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
