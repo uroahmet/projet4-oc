@@ -16,16 +16,24 @@ margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
+    margin-left: 335px;
+
+    & .new {
+        border: 1px solid grey;
+    }
 }
 
 .card {
     width: calc(50% - 1rem);
-    & .card__image {
-        background-image: url(../../img/restau/menu1.jpg);
+    &__image {
         height: 231px;
         width: 498.65px;
         border: 1px solid black;
         border-radius: 1rem 1rem 0 0;
+    }
+    @for $i from 1 through 4 {
+        &   __image-#{$i} {
+            background-image: url(../../img/restau/menu#{$i}.jpg);
+        }
     }
 }

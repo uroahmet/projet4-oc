@@ -159,18 +159,32 @@ h1 { /** Titre ohmyfood **/
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
+  margin-left: 335px;
+}
+.menus__cards .new {
+  border: 1px solid grey;
 }
 
 .card {
-  width: calc(50% - 1rem); /* Largeur de 50% moins la marge pour que deux cartes s'alignent sur une ligne */
+  width: calc(50% - 1rem);
 }
-.card .card__image {
-  background-image: url(../../img/restau/menu1.jpg);
+.card__image {
   height: 231px;
   width: 498.65px;
   border: 1px solid black;
   border-radius: 1rem 1rem 0 0;
+}
+.card __image-1 {
+  background-image: url(../../img/restau/menu1.jpg);
+}
+.card __image-2 {
+  background-image: url(../../img/restau/menu2.jpg);
+}
+.card __image-3 {
+  background-image: url(../../img/restau/menu3.jpg);
+}
+.card __image-4 {
+  background-image: url(../../img/restau/menu4.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */
