@@ -195,6 +195,11 @@ h1 { /** Titre ohmyfood **/
   place-items: center;
   border-radius: 2px;
 }
+@media screen and (max-width: 932px) and (min-width: 430px) {
+  .menus__cards .new::before {
+    right: -11rem;
+  }
+}
 
 .card {
   width: calc(50% - 1rem);
@@ -204,6 +209,7 @@ h1 { /** Titre ohmyfood **/
   width: 498.65px;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
+  background-position: center;
 }
 @media screen and (max-width: 932px) and (min-width: 430px) {
   .card__image {

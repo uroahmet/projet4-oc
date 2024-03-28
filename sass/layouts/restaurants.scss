@@ -38,6 +38,9 @@ margin-bottom: 0rem;
         display: grid;
         place-items: center;
         border-radius: 2px;
+        @media screen and (max-width: 932px) and (min-width: 430px) {
+            right: -11rem;
+        }
     }
 }
 
@@ -48,6 +51,7 @@ margin-bottom: 0rem;
         width: 498.65px;
         border-radius: 1rem 1rem 0 0;
         background-size: cover;
+        background-position: center;
         @media screen and (max-width: 932px) and (min-width: 430px) {
             width: 384px;
         }
