@@ -169,7 +169,7 @@ h1 { /** Titre ohmyfood **/
 .menus__cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 10px;
   margin-left: 335px;
 }
 @media screen and (max-width: 932px) and (min-width: 430px) {
@@ -186,7 +186,7 @@ h1 { /** Titre ohmyfood **/
   position: absolute;
   height: 29px;
   width: 5rem;
-  right: 18rem;
+  right: 10px;
   margin-top: 20px;
   color: #008766;
   background-color: #99E2D0;
@@ -201,9 +201,6 @@ h1 { /** Titre ohmyfood **/
   }
 }
 
-.card {
-  width: calc(50% - 1rem);
-}
 .card__image {
   height: 172px;
   width: 498.65px;
@@ -227,6 +224,12 @@ h1 { /** Titre ohmyfood **/
 }
 .card__image-4 {
   background-image: url(../../img/restau/menu4.jpg);
+}
+.card h3 {
+  padding: 3px 1rem;
+}
+.card p {
+  padding: 0 1rem;
 }
 .card__description {
   position: relative;
@@ -270,6 +273,29 @@ h1 { /** Titre ohmyfood **/
 }
 .card__description .fas:hover {
   opacity: 1;
+}
+
+footer {
+  background-color: #353535;
+  padding: 1rem 2rem;
+  color: white;
+}
+footer h2 {
+  font-family: "Shrikhand", "sans-serif";
+  font-weight: 500;
+  padding: 1rem 0;
+  text-align: right;
+}
+footer p {
+  padding: 0.2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+main h2 {
+  font-family: "Shrikhand", serif;
 }
 
 /*# sourceMappingURL=style.css.map */

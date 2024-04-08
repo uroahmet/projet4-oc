@@ -15,7 +15,7 @@ margin-bottom: 0rem;
 .menus__cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 10px;
     margin-left: 335px;
     @media screen and (max-width: 932px) and (min-width: 430px) {
     flex-direction: column;
@@ -30,7 +30,7 @@ margin-bottom: 0rem;
         position: absolute;
         height: 29px;
         width: 5rem;
-        right: 18rem;
+        right: 10px;
         margin-top: 20px;
         color: #008766;
         background-color: #99E2D0;
@@ -45,7 +45,7 @@ margin-bottom: 0rem;
 }
 
 .card {
-    width: calc(50% - 1rem);
+  
     &__image {
         height: 172px;
         width: 498.65px;
@@ -58,8 +58,16 @@ margin-bottom: 0rem;
     }
     @for $i from 1 through 4 {
         &__image-#{$i} {
-            background-image: url(../../img/restau/menu#{$i}.jpg);
+            background-image: url(../../img/restau/menu#{$i}.jpg); 
         }
+    }
+
+    & h3 {
+        padding: 3px 1rem;
+    }
+
+    & p {
+        padding: 0 1rem;
     }
     &__description {
         position: relative;
