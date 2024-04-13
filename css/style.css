@@ -159,6 +159,7 @@ h1 { /** Titre ohmyfood **/
 .menus h2 {
   padding: 30px;
   margin-bottom: 0rem;
+  margin-left: 2rem;
 }
 @media screen and (max-width: 932px) and (min-width: 430px) {
   .menus h2 {
@@ -307,11 +308,8 @@ img {
   max-width: 100%;
 }
 
-/* main h2 {
-
-    font-family: "Shrikhand", serif;
+main h4 {
+  font-family: "Shrikhand", serif;
 }
-
-*/
 
 /*# sourceMappingURL=style.css.map */
