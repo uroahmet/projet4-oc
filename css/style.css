@@ -148,6 +148,7 @@ h1 { /** Titre ohmyfood **/
 }
 
 .menus {
+  padding: 0 17rem;
   background-color: #F6F6F6;
 }
 @media screen and (max-width: 932px) and (min-width: 430px) {
@@ -157,25 +158,24 @@ h1 { /** Titre ohmyfood **/
 }
 .menus h2 {
   padding: 30px;
-  margin-left: 310px;
   margin-bottom: 0rem;
 }
 @media screen and (max-width: 932px) and (min-width: 430px) {
   .menus h2 {
-    margin-left: -10px;
+    margin-left: -17rem;
   }
 }
 
 .menus__cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-left: 335px;
+  justify-content: center;
+  gap: 5vw;
 }
 @media screen and (max-width: 932px) and (min-width: 430px) {
   .menus__cards {
     flex-direction: column;
-    margin-left: 25px;
+    margin-left: -15rem;
   }
 }
 .menus__cards .new {
@@ -197,7 +197,7 @@ h1 { /** Titre ohmyfood **/
 }
 @media screen and (max-width: 932px) and (min-width: 430px) {
   .menus__cards .new::before {
-    right: -11rem;
+    right: 1rem;
   }
 }
 
@@ -279,6 +279,19 @@ footer {
   background-color: #353535;
   padding: 1rem 2rem;
   color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (max-width: 932px) and (min-width: 430px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
 }
 footer h2 {
   font-family: "Shrikhand", "sans-serif";
@@ -294,8 +307,11 @@ img {
   max-width: 100%;
 }
 
-main h2 {
-  font-family: "Shrikhand", serif;
+/* main h2 {
+
+    font-family: "Shrikhand", serif;
 }
+
+*/
 
 /*# sourceMappingURL=style.css.map */
